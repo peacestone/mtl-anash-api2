@@ -1,0 +1,7 @@
+<h1>Add A CSV file hear</h1>
+
+
+<%= form_tag({action: :create}, multipart: true) do %>
+  <%= file_field_tag 'people_csv' %> <br><br>
+  <%= submit_tag 'upload' %>
+<% end %>
