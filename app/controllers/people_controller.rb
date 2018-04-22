@@ -8,6 +8,9 @@ class PeopleController < ApplicationController
     end
 
     def create
+        Person.create_from_csv(params[:people_csv].to_io)
+
+        render plain: 'good job!'
     end
     
 end
