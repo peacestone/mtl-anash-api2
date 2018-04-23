@@ -1,0 +1,13 @@
+<h3>The database contains <%= @people_count %> records</h3>
+
+    <%@people_first.each do |person| %>
+        <h5><%= person.id %> <%= person.first_name %> <%= person.last_name %></h5>
+    <%end%>
+    <br>
+    <br>.
+    <br>.
+    <br>.
+    
+    <%@people_last.each do |person| %>
+        <h5><%= person.id %><%= person.first_name %> <%= person.last_name %></h5>
+    <%end%>
