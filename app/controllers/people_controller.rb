@@ -16,8 +16,10 @@ class PeopleController < ApplicationController
 
     def create
         
-        if !params[:people_csv].original_filename.last(3) === 'csv'
-            redirect_to :new_person
+
+        
+        if (params[:people_csv].nil?) || (params[:people_csv].original_filename.last(3) != 'csv')
+            redirect_to :new_person, notice: 'Invalid File Uploaded'
         else
             Person.all.destroy_all
             Person.create_from_csv(params.require(:people_csv).to_io)
