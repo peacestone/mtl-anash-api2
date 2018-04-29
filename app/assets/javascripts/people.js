@@ -1,14 +1,9 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", (event) => { 
     const formNode = document.getElementById('upload-form')
     formNode.addEventListener('submit', (element) => {
-        const loader =  document.createElement('div')
-        loader.className = 'loader'
-
-        const h1 =  document.createElement('h1')
-        const textNode = document.createTextNode('Hang on Tight! This could take some time')
-        h1.appendChild(textNode)
-        formNode.appendChild(loader)
-        formNode.appendChild(h1)
+        element.target.style.display = 'none'
+        const uploadDiv = document.getElementById('upload-loader')
+        uploadDiv.innerHTML = "<div class='loader'> </div> <h1>Hang on Tight!</h1>"
     })
 
     

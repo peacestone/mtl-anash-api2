@@ -8,7 +8,19 @@
     width: 60px;
     height: 60px;
     animation: spin 1s linear infinite;
+    margin: auto;
+    
 }
+
+#upload-loader {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    top: 18vh;
+}
+
+
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

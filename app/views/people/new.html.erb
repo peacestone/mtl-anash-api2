@@ -1,8 +1,7 @@
-<h1>Create New People Database</h1>
-<p><strong>Warning: this will destroy preivous database<strong></p>
-
 <%= form_tag({action: :create}, multipart: true, id: 'upload-form') do %>
+  <h1>Create New People Database</h1>
+  <p><strong>Warning: this will destroy preivous database</strong></p>
   <%= file_field_tag 'people_csv' %> <br><br>
   <%= submit_tag 'upload' %>
-  <div id='upload-loader'></div>
 <% end %>
+<div id='upload-loader'></div>
