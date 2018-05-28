@@ -17,3 +17,5 @@ people = JSON.parse(json)
 people.each do |person| 
     Person.create(person)
 end
+
+User.create(name: 'admin', password: 'password')
