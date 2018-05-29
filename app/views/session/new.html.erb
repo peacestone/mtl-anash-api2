@@ -1,6 +1,10 @@
 <h1>Login</h1>
-<%= form_for @user, url: login_path, method: :post do |f| %>
-    <%= f.text_field :name, placeholder: 'Name' %>
-    <%= f.password_field :password, placeholder: 'Password' %>
-    <%= f.submit 'Login' %>
-<%end%>
+
+
+<%= form_tag({controller: 'session', action: 'create'}, method: 'post') %>
+<%= text_field_tag 'name', nil, placeholder: 'Name'%>
+<%= password_field_tag 'password', nil, placeholder: 'Password'%>
+<%= submit_tag 'Login' %>
+
+
+
