@@ -7,11 +7,11 @@ class SessionController < ApplicationController
   end
 
   def create
-    if !User.find_by_name(name_param).try(:authenticate, password_param )
-      puts password_param
-      redirect_to new_session_path
+    if user = User.find_by_name(name_param).try(:authenticate, password_param )
+      session[:user_id] = user
+      redirect_to '/people', notice: "Welcome #{user.name} "
     else
-      redirect_to '/people' 
+      redirect_to new_session_path, notice: "Invalid Login Input"
     end
   end
 
