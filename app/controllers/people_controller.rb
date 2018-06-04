@@ -1,4 +1,7 @@
 class PeopleController < ApplicationController
+
+    skip_before_action :require_login, only: :index
+
     def index 
         @people = Person.all.order(:last_name)
         @people_first = Person.take(5) 
