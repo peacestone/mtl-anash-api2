@@ -1,0 +1,55 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.xApp {
+    text-align: center;
+  
+  
+  }
+  
+  xbody {
+    background-color: #EDF2F4;
+  }
+  
+  
+  
+  
+  
+  
+  #xsidebar {
+    height: 93%;
+    /*background-color: red;*/
+    width: 280px;
+  }
+  
+  
+  /*body > #root > div {
+    height: 100vh;
+  }*/
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+   /*.ReactVirtualized__Grid__innerScrollContainer {
+  
+   }*/
+  
+  .listing-row {
+      line-height: 35px;
+       border-top: 1px solid rgba(34, 36, 38, 0.15);
+       padding-left: 0.6em;
+       font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+       font-size: 16px;
+       font-weight: bold;
+   }
+  
+   .listing-row:hover {
+    background:  rgba(0,0,0,.03)
+   }
+
+
+   @import 'semantic-ui-css/semantic.min.css' 

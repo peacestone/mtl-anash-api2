@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/people', to: 'people#index'
   get '/people/new', to: 'people#new', as: 'new_person'
   post '/people', to: 'people#create', as: 'create_people'
+  get 'react', to: 'home#index'
 end
