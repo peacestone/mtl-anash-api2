@@ -8,10 +8,10 @@ import registerServiceWorker from '../src/registerServiceWorker';
 //import '../src/semantic-ui-css/semantic.min.css' 
 //import '../src/semantic.min.css'
 //import './semantic/out/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
 
-import 'semantic-ui-css/semantic.min.css'
 
-import '../src/index.css';
+
 
 import peopleReducer from '../src/reducers/peopleReducer'
 //import 'react-virtualized/styles.css';
