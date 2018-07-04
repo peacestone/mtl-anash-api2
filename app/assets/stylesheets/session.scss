@@ -1,3 +1,43 @@
 // Place all the styles related to the session controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div#admin-navbar > a > div {
+
+
+    padding: 1em 1.2em;
+    background: #f7b5b5;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div#admin-navbar {
+    display: flex;
+    justify-content: left;
+    background: #f7b5b5;
+    width: 100%;
+
+}
+
+#admin-navbar-form {
+    padding: 1em 1.2em;
+    border-color: inherit;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+    color: rgb(85, 26, 139);
+    background: inherit;
+    width: auto;
+
+
+}
+
+#admin-navbar-form:focus {
+    outline-style: dotted;
+    outline-width: 1px;
+    
+}
