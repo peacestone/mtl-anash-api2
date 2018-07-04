@@ -2,7 +2,9 @@ class SessionController < ApplicationController
   skip_before_action :require_login, only: ['new', 'create']
 
   def new
-
+    if session['user_id']
+      redirect_to '/people'
+    end
   end
 
   def create

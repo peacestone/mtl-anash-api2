@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
 
     def require_login
         if session['user_id'].nil? 
-            redirect_to '/', notice: 'You must be logged in'
+            redirect_to '/login', notice: 'You must be logged in'
         end
     end
-
 end
